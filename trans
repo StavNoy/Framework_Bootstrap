@@ -1,0 +1,23 @@
+The goal of this project is to reproduce some of the features present in the Bootstrap framework.
+You will need to reproduce all those described in this topic.
+They do not have to have the same names as
+in Boostrap, but their operation must be similar.
+An unfinished feature will not be counted.
+Do not go to another stage until you have finished all those before it, otherwise it will not count either.
+
+
+!!!
+	You will need to use Sass for the CSS part and jQuery for the JavaScript part.
+	Any other technology is outlawed.
+	The use of git is mandatory for this project and will be verified in defense.
+	Make branches and use explicit commit messages.
+
+
+
+
+1.
+	We will start by making a grid, similar to that of Bootstrap.
+	This will allow us to make responsive sites very easily.
+	• .container and .container-fluid classes in which your grid will be located.
+	• .row classes for each row of the grid.
+	• Classes .col - * - * to fill each .row. These are the blocks you will modify according to the resolution.
