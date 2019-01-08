@@ -1,0 +1,14 @@
+@import '../center';
+
+@mixin col($col-count) {
+	flex : 0 0 ($col-count / 12 * 100%);
+	max-width: ($col-count / 12 * 100%);
+	display: flex;
+	justify-content: center;
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		@include col($i);
+	}
+}

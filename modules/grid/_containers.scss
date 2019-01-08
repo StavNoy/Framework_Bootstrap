@@ -1,0 +1,24 @@
+@import '../breakpoints';
+@import '../center';
+
+.container-fluid {
+	@extend %center;
+	max-width : 100%;
+}
+
+.container {
+	@extend .container-fluid;
+	@media only screen and (min-width: map_get($breakpoints, s)) {
+		max-width: 295px;
+	}
+	@media only screen and (min-width: map_get($breakpoints, m)) {
+		max-width: 600px;
+	}
+	@media only screen and (min-width: map_get($breakpoints, l)) {
+		max-width: 830px;
+	}
+	@media only screen and (min-width: map_get($breakpoints, xl)) {
+		max-width: 1170px;
+	}
+}
+
