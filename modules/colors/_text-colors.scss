@@ -1,0 +1,7 @@
+@import 'theme-colors';
+
+@each $style, $color in $theme-colors {
+	.text-#{$style} {
+		color: $color;
+	}
+}

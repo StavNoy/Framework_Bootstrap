@@ -40,5 +40,5 @@ Do not go to another stage until you have finished all those before it, otherwis
 		You are free to add more if you find some missing.
 		For each color class created, you will need to create its equivalent that changes the background color, with the .bg- * classes.
 
-	• Alerts, like Bootstrap, via .alert-success, .alert-info, .alert-warning and .alter-danger classes.
+	D. Alerts, like Bootstrap, via .alert-success, .alert-info, .alert-warning and .alter-danger classes.
 		As for the colors, you are free to add some.
