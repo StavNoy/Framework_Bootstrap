@@ -1,10 +1,14 @@
 @import '../center';
+@import 'grid-margin';
 
 @mixin col($col-count) {
-	flex : 0 0 ($col-count / 12 * 100%);
-	max-width: ($col-count / 12 * 100%);
+	$width: calc(#{($col-count / 12 * 100%)} - #{$margin-size * 2});
+
+	flex : 0 0 $width;
+	max-width: $width;
 	display: flex;
 	justify-content: center;
+	@include grid-margin;
 }
 
 @for $i from 1 through 12 {

@@ -1,7 +1,6 @@
 body * {
 	border: 1px solid;
 	min-height: 10px;
-	margin: 3px;
 }
 [class*='container'] {
 	border-color: white;

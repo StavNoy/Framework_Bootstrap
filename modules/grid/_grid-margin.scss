@@ -1,0 +1,8 @@
+$margin-size: 0.3em;
+
+@mixin grid-margin {
+	margin: $margin-size;
+	& {
+		box-sizing: border-box;
+	}
+}

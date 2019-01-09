@@ -29,14 +29,14 @@ Do not go to another stage until you have finished all those before it, otherwis
 	Each of these elements can be put anywhere in the grid:
 
 
-	• Buttons, with different colors and sizes via .btn- * classes.
+	A. Buttons, with different colors and sizes via .btn- * classes.
 		Your buttons should also look different with the active selector or if they have the '.disabled' attribute.
 
-	• Images, which can be responsive with the '.img-responsive' class.
+	B. Images, which can be responsive with the '.img-responsive' class.
 		Edges can be modified via the '.img-rounded', '.img-circle' and '.img-thumbail' classes.
 		And as we find that it is missing in Bootstrap, we want to be able to blur the images with the .img-blur class.
 
-	• Colors, .text-muted, .text-primary, .text-success, .text-info, .text-warning, and .text-error classes.
+	C. Colors, .text-muted, .text-primary, .text-success, .text-info, .text-warning, and .text-error classes.
 		You are free to add more if you find some missing.
 		For each color class created, you will need to create its equivalent that changes the background color, with the .bg- * classes.
 
