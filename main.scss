@@ -2,5 +2,6 @@
 @import "modules/theme-colors";
 
 //classes
-@import 'modules/grid/grid';
-@import "modules/buttons/btn";
+@import 'partials/grid';
+@import "partials/btn";
+@import "modules/img/img";
