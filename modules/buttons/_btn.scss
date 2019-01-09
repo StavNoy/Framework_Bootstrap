@@ -1,6 +1,6 @@
 @import '../contrast-color';
 
-// .btn may apply to elements other than <button>
+// .btn may apply to elements other than <button>, but must be styled the same
 .btn {
 	text-transform: none;
 	text-indent: 0;
@@ -12,13 +12,27 @@
 	cursor: pointer;
 }
 
-// buttons corresponding to global themes
+// .btn corresponding to global themes
 @each $style, $color in $theme-colors {
 	.btn.btn-#{$style} {
 		background-color : $color;
-		color : contrast-color($color)
+		color : contrast-color($color);
+
+		&:hover {
+			background-color: darken($color, 10%);
+		}
+		&:active {
+			background-color: darken($color, 20%);
+			outline: thin solid $color;
+		}
 	}
 }
+
+.btn[disabled] {
+	opacity: .65;
+	pointer-events: none;
+}
+
 
 // .btn made to look like link - overrides .btn
 .btn.btn-link {
