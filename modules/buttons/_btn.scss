@@ -1,3 +1,6 @@
+@import '../contrast-color';
+
+// .btn may apply to elements other than <button>
 .btn {
 	text-transform: none;
 	text-indent: 0;
@@ -7,24 +10,27 @@
 	border: thin hidden;
 	border-radius: 0.2em;
 	cursor: pointer;
+}
 
-	@each $style, $color in $theme-colors {
-		&.btn-#{$style} {
-			background-color : $color;
-		}
+// buttons corresponding to global themes
+@each $style, $color in $theme-colors {
+	.btn.btn-#{$style} {
+		background-color : $color;
+		color : contrast-color($color)
 	}
+}
 
-	&.btn-link {
-		background: none;
-		color: blue;
-		border: none;
-		padding: 0;
-		font: inherit;
-		font-weight: normal;
-		text-decoration: none;
+// .btn made to look like link - overrides .btn
+.btn.btn-link {
+	background: none;
+	color: blue;
+	border: none;
+	padding: 0;
+	font: inherit;
+	font-weight: normal;
+	text-decoration: none;
 
-		&:hover {
-			text-decoration-line: underline;
-		}
+	&:hover {
+		text-decoration-line: underline;
 	}
 }
