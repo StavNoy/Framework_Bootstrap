@@ -1,0 +1,15 @@
+@import '../modules/color/theme-colors';
+@import '../modules/edgers';
+@import '../modules/color/theme-colors';
+
+.alert {
+	@extend %rounded;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+@each $style, $color in $theme-colors {
+	.alert.alert-#{$style} {
+		background-color: $color;
+	}
+}

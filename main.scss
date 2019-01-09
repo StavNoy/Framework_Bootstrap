@@ -1,9 +1,7 @@
-//globals
-@import "modules/colors/theme-colors";
-@import "modules/colors/text-colors";
-@import "modules/colors/bg-colors";
-
 //classes
 @import 'partials/grid';
 @import 'partials/btn';
 @import 'partials/img';
+@import 'partials/text-colors';
+@import 'partials/bg-colors';
+@import 'partials/alert';

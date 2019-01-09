@@ -1,13 +1,13 @@
+@import "../edgers";
+
 .img-rounded {
-	border-radius: 0.3em;
+	@extend %rounded;
 }
 
 .img-thumbnail {
-	@extend .img-rounded;
-	border: solid thin grey;
-	padding: 0.3em;
+	@extend %thumbnail;
 }
 
 .img-circle {
-	border-radius: 50%;
+	@extend %circle;
 }

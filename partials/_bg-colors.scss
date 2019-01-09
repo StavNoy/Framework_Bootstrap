@@ -1,4 +1,4 @@
-@import 'theme-colors';
+@import '../modules/color/theme-colors';
 
 @each $style, $color in $theme-colors {
 	.bg-#{$style} {
