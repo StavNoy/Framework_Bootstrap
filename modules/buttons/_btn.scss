@@ -1,0 +1,30 @@
+.btn {
+	text-transform: none;
+	text-indent: 0;
+	text-shadow: none;
+	display: inline-block;
+	padding: 0.5em;
+	border: thin hidden;
+	border-radius: 0.2em;
+	cursor: pointer;
+
+	@each $style, $color in $theme-colors {
+		&.btn-#{$style} {
+			background-color : $color;
+		}
+	}
+
+	&.btn-link {
+		background: none;
+		color: blue;
+		border: none;
+		padding: 0;
+		font: inherit;
+		font-weight: normal;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration-line: underline;
+		}
+	}
+}

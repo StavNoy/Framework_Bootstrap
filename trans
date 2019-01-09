@@ -15,9 +15,30 @@ Do not go to another stage until you have finished all those before it, otherwis
 
 
 
-1.
+1. Grid
 	We will start by making a grid, similar to that of Bootstrap.
 	This will allow us to make responsive sites very easily.
 	• .container and .container-fluid classes in which your grid will be located.
 	• .row classes for each row of the grid.
 	• Classes .col - * - * to fill each .row. These are the blocks you will modify according to the resolution.
+
+
+
+2. Filling
+	Now that we have our functional grid, you will be able to fill it.
+	Each of these elements can be put anywhere in the grid:
+
+
+	• Buttons, with different colors and sizes via .btn- * classes.
+		Your buttons should also look different with the active selector or if they have the '.disabled' attribute.
+
+	• Images, which can be responsive with the '.img-responsive' class.
+		Edges can be modified via the '.img-rounded', '.img-circle' and '.img-thumbail' classes.
+		And as we find that it is missing in Bootstrap, we want to be able to blur the images with the .img-blur class.
+
+	• Colors, .text-muted, .text-primary, .text-success, .text-info, .text-warning, and .text-error classes.
+		You are free to add more if you find some missing.
+		For each color class created, you will need to create its equivalent that changes the background color, with the .bg- * classes.
+
+	• Alerts, like Bootstrap, via .alert-success, .alert-info, .alert-warning and .alter-danger classes.
+		As for the colors, you are free to add some.
