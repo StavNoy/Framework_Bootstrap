@@ -5,7 +5,7 @@
 	@each $k, $media-type in $media-types {
 		@media #{$media-type} {
 			.#{$display}-#{$media-type} {
-				@include extend-display($display);
+				@include set-visibility($display);
 			}
 		}
 	}

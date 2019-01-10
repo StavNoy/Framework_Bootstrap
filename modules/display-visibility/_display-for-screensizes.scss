@@ -1,11 +1,14 @@
 @import '../breakpoints';
 @import 'extend-display';
 
-@mixin display-for-screensizes($display) {
+@mixin display-for-screensizes {
 	@each $size-name, $size in $breakpoints {
 		@media only screen and (min-width: $size) {
-			.#{$display}-#{$size-name} {
-				@include extend-display($display);
+			.visible-#{$size-name} {
+				@include visible;
+			}
+			.hidden-#{$size-name} {
+				@include hidden;
 			}
 		}
 	}

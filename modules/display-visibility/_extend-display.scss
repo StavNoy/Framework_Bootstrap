@@ -1,6 +1,6 @@
 @import 'display-types';
 
-@mixin extend-display($name) {
+@mixin set-visibility($name) {
 	@if $name == visible {
 		@include visible;
 	} @else {

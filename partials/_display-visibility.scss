@@ -2,6 +2,8 @@
 @import '../modules/display-visibility/display-for-screensizes';
 
 @each $display in (visible, hidden){
-	@include display-for-medias($display);
-	@include display-for-screensizes($display)
+	@include display-for-medias(visible);
+	@include display-for-medias(hidden);
+
+	@include display-for-screensizes
 }
