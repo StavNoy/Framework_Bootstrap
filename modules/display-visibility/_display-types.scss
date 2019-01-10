@@ -1,0 +1,14 @@
+@mixin visible {
+	visibility: visible;
+	display: flex;
+}
+@mixin hidden {
+	display: none;
+}
+
+.visible {
+	@include visible;
+}
+.hidden {
+	@include hidden;
+}

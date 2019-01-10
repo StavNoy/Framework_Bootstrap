@@ -1,0 +1,9 @@
+@import 'display-types';
+
+@mixin extend-display($name) {
+	@if $name == visible {
+		@include visible;
+	} @else {
+		@include hidden;
+	}
+}

@@ -12,7 +12,13 @@ Do not go to another stage until you have finished all those before it, otherwis
 	The use of git is mandatory for this project and will be verified in defense.
 	Make branches and use explicit commit messages.
 
-
+	1 - 4 pts
+	2 - 4 pts
+	3 - 3 pts
+	4 - 3 pts
+	5 - 3 pts
+	6 - 4 pts
+	7 - 3 pts
 
 
 1. Grid
@@ -42,3 +48,16 @@ Do not go to another stage until you have finished all those before it, otherwis
 
 	D. Alerts, like Bootstrap, via .alert-success, .alert-info, .alert-warning and .alter-danger classes.
 		As for the colors, you are free to add some.
+
+
+
+3. Hide items
+    We realized that on mobile, our pages were a little overloaded and we would like elements to be visible only on a big screen.
+    We would also like to be able to display elements only on mobile.
+    You will therefore reproduce all the following classes:
+
+    • .visible- * - *, which will say on which devices the elements will be necessarily visible.
+
+    • .hidden - * - *, which, conversely, will be hidden on the desired devices.
+
+    • .visible-print- * and .hidden-print, which will show or hide items during printing.

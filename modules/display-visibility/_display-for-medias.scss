@@ -1,0 +1,12 @@
+@import '../media-types';
+@import 'extend-display';
+
+@mixin display-for-medias($display) {
+	@each $k, $media-type in $media-types {
+		@media #{$media-type} {
+			.#{$display}-#{$media-type} {
+				@include extend-display($display);
+			}
+		}
+	}
+}

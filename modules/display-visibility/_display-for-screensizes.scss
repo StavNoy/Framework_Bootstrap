@@ -1,0 +1,12 @@
+@import '../breakpoints';
+@import 'extend-display';
+
+@mixin display-for-screensizes($display) {
+	@each $size-name, $size in $breakpoints {
+		@media only screen and (min-width: $size) {
+			.#{$display}-#{$size-name} {
+				@include extend-display($display);
+			}
+		}
+	}
+}
