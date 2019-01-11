@@ -1,37 +1,5 @@
 .dropdown {
-	&::after {
-		content: "";
-		display: inline-block;
-		width: 0;
-		height: 0;
-		border: 0.3em solid transparent;
-		border-top-color: black;
-		transform: translateY(0.1em);
-		margin-left: 0.2em;
-	}
-
-	&:hover > .dropdown-menu {
-		display: block;
-		z-index: 1;
-	}
+	display: flex;
+	flex-direction: row;
+	position: relative;
 }
-
-
-/*
-div:hover > ul {
-	display: block;
-	z-index: 1;
-}
-
-@media only screen and (min-width: 615px) {
-	h4 + span {
-		height: 0;
-		width: 0;
-		border: solid white;
-		border-width: 0 0.1em 0.1em 0;
-		display: inline-block;
-		padding: 0.15em;
-		transform: translateX(0.5em) rotate(45deg);
-	}
-}
-*/

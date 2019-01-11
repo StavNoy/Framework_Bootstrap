@@ -1,0 +1,12 @@
+.dropdown-toggle {
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border: 0.3em solid transparent;
+		border-top-color: black;
+		transform: translateY(0.1em);
+		margin-left: 0.2em;
+	}
+}
