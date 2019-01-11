@@ -61,3 +61,8 @@ Do not go to another stage until you have finished all those before it, otherwis
     • .hidden - * - *, which, conversely, will be hidden on the desired devices.
 
     • .visible-print- * and .hidden-print, which will show or hide items during printing.
+
+
+4. Navbars
+	We would like to make a kind of menu, a bit like the Bootstrap navbars.
+	There are many ways to do this, we let you choose the most suitable, but we want all the features of Bootstrap, including drop-down lists.

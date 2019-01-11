@@ -1,0 +1,22 @@
+@import '../color/theme-colors';
+@import '../color/contrast-color';
+
+.navbar {
+	width:100%;
+	display: flex;
+	flex-flow: wrap row;
+
+	@media print {
+		display: none;
+	}
+}
+
+@each $style, $color in $theme-colors {
+	.navbar.navbar-#{$style} {
+		background-color: $color;
+		color: contrast-color($color);
+	}
+}
+
+
+//TODO in JS: if (el.tagName === 'NAV') el.role='navigation'
