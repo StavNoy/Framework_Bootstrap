@@ -1,0 +1,7 @@
+.dropdown-item{
+	padding: 0.2em 1em;
+	white-space: nowrap;
+	&:hover {
+		background-color: lightgreen;
+	}
+}

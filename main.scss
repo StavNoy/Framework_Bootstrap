@@ -8,11 +8,9 @@
 
 
 
-//TODO remove
+//TODO tests
 @import "modules/navbar/navbar";
-@import 'modules/dropdown/dropdown';
-@import 'modules/dropdown/dropdown-menu';
-@import 'modules/dropdown/dropdown-toggle';
+@import 'partials/dropdowns';
 
 
 //NOTICE may clash with default class attributes- import after all //ASK
