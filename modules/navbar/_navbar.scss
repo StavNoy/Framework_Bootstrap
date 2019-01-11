@@ -3,20 +3,38 @@
 
 .navbar {
 	width:100%;
-	display: flex;
-	flex-flow: wrap row;
+	display : flex;
+	flex-direction : row;
+	justify-content: space-between;
 
 	@media print {
 		display: none;
 	}
-}
 
-@each $style, $color in $theme-colors {
-	.navbar.navbar-#{$style} {
-		background-color: $color;
-		color: contrast-color($color);
+	@each $style, $color in $theme-colors {
+		&.navbar-#{$style} {
+			background-color: $color;
+			color: contrast-color($color);
+		}
+	}
+
+	.navbar-brand {
+		align-self: start;
+	}
+
+	.navbar-nav {
+		width: 100%;
+		display: flex;
+		flex-direction: inherit;
+		justify-content: space-between;
+
+		.nav-item.disabled:hover {
+			opacity: 1;
+		}
 	}
 }
+
+
 
 
 //TODO in JS: if (el.tagName === 'NAV') el.role='navigation'

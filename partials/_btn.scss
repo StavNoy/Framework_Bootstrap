@@ -1,6 +1,8 @@
 @import '../modules/color/contrast-color';
 @import '../modules/color/theme-colors';
 
+
+
 // .btn may apply to elements other than <button>, but must be styled the same
 .btn {
 	text-transform: none;
@@ -11,27 +13,22 @@
 	border: thin hidden;
 	border-radius: 0.2em;
 	cursor: pointer;
-}
 
-// .btn corresponding to global themes
-@each $style, $color in $theme-colors {
-	.btn.btn-#{$style} {
-		background-color : $color;
-		color : contrast-color($color);
+	// .btn corresponding to global themes
+	@each $style, $color in $theme-colors {
+		&.btn-#{$style} {
+			background-color : $color;
+			color : contrast-color($color);
 
-		&:hover {
-			background-color: darken($color, 10%);
-		}
-		&:active {
-			background-color: darken($color, 20%);
-			outline: thin solid $color;
+			&:hover {
+				background-color: darken($color, 10%);
+			}
+			&:active {
+				background-color: darken($color, 20%);
+				outline: thin solid $color;
+			}
 		}
 	}
-}
-
-.btn[disabled] {
-	opacity: .65;
-	pointer-events: none;
 }
 
 
@@ -47,5 +44,8 @@
 
 	&:hover {
 		text-decoration-line: underline;
+	}
+	&:active {
+		outline: thin solid blue;
 	}
 }
